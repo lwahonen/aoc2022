@@ -1,0 +1,17 @@
+{
+  "name": "2022",
+  "version": "1.0.0",
+  "description": "Advent of Code solutions",
+  "author": "lwahonen",
+  "type": "module",
+  "license": "CC0",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "logic-solver": "^2.0.1",
+    "sync-fetch": "^0.4.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babelify": "^10.0.0"
+  }
+}
