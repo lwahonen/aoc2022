@@ -73,3 +73,40 @@ export function keyCount(myobj) {
             ++count;
     return count;
 }
+
+
+
+export function columns(matrix)
+{
+    let cols=[]
+    for (let i = 0; i < matrix[0].length; i++) {
+        cols[i]=matrix.map(g=>g[i])
+    }
+    return cols
+}
+
+export function rotate(matrix) {
+    let cols = columns(matrix)
+    return cols.reverse()
+}
+
+export function flip(matrix)
+{
+    return matrix.reverse()
+}
+
+export function permutations(matrix) {
+    let now = matrix
+    let ret = [now]
+    for (let i = 0; i < 4; i++) {
+        now = rotate(now)
+        ret.push(now)
+    }
+    now = flip(matrix)
+    for (let i = 0; i < 4; i++) {
+        now = rotate(now)
+        ret.push(now)
+    }
+    return ret
+}
+
