@@ -110,3 +110,8 @@ export function permutations(matrix) {
     return ret
 }
 
+function getKey(row, col) {
+    return "" + row + "," + col
+}
+
+
