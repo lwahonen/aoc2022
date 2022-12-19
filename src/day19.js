@@ -185,7 +185,7 @@ for (const id of Object.keys(blueprints)) {
     let geode = value["geode"];
     part1 += geode * id
     records[id] = geode
-    console.log("Geodes for " + id + " " + geode+" reached via "+value.story)
+    console.log("Geodes for id " + id + " are " + geode+" reached via "+value.story)
 }
 console.log("Part 1 "+part1)
 
@@ -205,6 +205,6 @@ for (let id = 1; id <= 3; id++) {
         geode: 0
     });
     part2  *= value["geode"]
-    console.log("Geodes for " + id + " " + geode+" reached via "+value.story)
+    console.log("Geodes for id " + id + " are " + value["geode"]+" reached via "+value.story)
 }
 console.log("Part 2 "+part2)
