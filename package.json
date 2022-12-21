@@ -8,6 +8,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "logic-solver": "^2.0.1",
+    "nerdamer": "^1.1.13",
     "sync-fetch": "^0.4.1"
   },
   "devDependencies": {
